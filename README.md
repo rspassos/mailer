@@ -1,2 +1,2 @@
-# mailer
-Project to study service repository pattern with github actions and TDD
+# Mailer
+Project to study Service Repository Pattern and TDD with github actions

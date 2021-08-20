@@ -14,6 +14,6 @@ class Sendmail
             'mensagem' => $request->mensagem,
         ];
 
-        Mail::to('admin@example.com')->send(new Form($data));
+        return Mail::to('admin@example.com')->send(new Form($data));
     }
 }

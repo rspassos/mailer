@@ -5,17 +5,17 @@ namespace Tests\Feature;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
-class ExampleTest extends TestCase
+class SendRouteTest extends TestCase
 {
     /**
      * A basic test example.
      *
      * @return void
      */
-    public function test_example()
+    public function test_send_route_has_validation()
     {
-        $response = $this->get('/');
+        $response = $this->post('/send');
 
-        $response->assertStatus(200);
+        $response->assertStatus(302);
     }
 }

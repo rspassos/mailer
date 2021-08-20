@@ -26,9 +26,5 @@ jobs:
         run: chmod -R 777 storage bootstrap/cache
       - name: Cypress run
         uses: cypress-io/github-action@v2.9.7
-        with:
-          browser: chrome
-          install: true
-          wait-on: http://localhost
-          config-file: cypress.json
-          spec: cypress/integration/itworks.js
+        run: npx cypress run --spec cypress/integration/itworks.js
+

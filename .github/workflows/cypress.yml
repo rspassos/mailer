@@ -26,8 +26,9 @@ jobs:
         run: chmod -R 777 storage bootstrap/cache
       - name: Cypress run
         uses: cypress-io/github-action@v1
-        with:
+        env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+        with:
           browser: chrome
           install: true
           start: npm run watch

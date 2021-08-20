@@ -27,6 +27,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v1
         with:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
           browser: chrome
           install: true
           start: npm run watch

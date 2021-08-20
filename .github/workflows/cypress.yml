@@ -31,6 +31,6 @@ jobs:
           install: true
           start: npm run watch
           wait-on: http://localhost:8000
-          config-file: cypress.json
+          config-file: cypress-action.json
           spec: cypress/integration/itworks.js
 
